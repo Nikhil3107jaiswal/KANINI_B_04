@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+    <script>
+        function fetch() {
+            name = document.f1.t1.value;
+            lastname = document.f1.t2.value;
+            contact = document.f1.t3.value;
+            email = document.f1.t6.value;
+
+            document.getElementById("p1").innerHTML = "Welcome" + " " + name.bold() + " " + lastname.bold();
+            document.getElementById("p2").innerHTML = "My contact number is" + " " + contact.bold();
+            document.getElementById("p3").innerHTML = "My email address  is" + " " + email.bold();
+
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <fieldset>
+        <h1 style="text-align:center">My Registration form</h1>
+        <legend>Professional</legend>
+        <form name="f1" method="get" autocomplete="on">
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="t1"></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="t2"></td>
+                </tr>
+                <tr>
+                    <td>Contact No:</td>
+                    <td><input type="text" name="t3"></td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="text" name="t4"></td>
+                </tr>
+                <tr>
+                    <td>Date Of Birth:</td>
+                    <td><input type="date" name="t5" id=""></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" name="t6" id=""></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="t7" id=""></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="Gender" id="">Male
+                        <input type="radio" name="Gender" id="">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Adress:</td>
+                    <td><input type="text" name="t8" id=""></td>
+                </tr>
+                <tr>
+
+                </tr>
+                <tr>
+                    <td>Educational qualification:</td>
+                    <td><select name="Degree" id="">
+                        <option value="">Select option</option>
+                        <option value="B.tech">B.tech</option>
+                        <option value="BBA">BBA</option>
+                        <option value="BCA">BCA</option>
+                        <option value="B.Com">B.COM</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Experience:</td>
+                    <td><select name="" id="">
+                        <option value="">Select option</option>
+                        <option value="">Fresher</option>
+                        <option value="">Intermediate</option>
+                        <option value="">Advance</option>
+
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Hobbies:</td>
+                    <td>
+                        <input type="checkbox" value="Sports">Sports
+                        <input type="checkbox" value="Cooking">Cooking
+                        <input type="checkbox" value="Cooking">Reading Books
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="submit" onclick="fetch()"></td>
+                </tr>
+
+            </table>
+        </form>
+    </fieldset>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+
+</body>
+
+</html>
